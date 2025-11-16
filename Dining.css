@@ -1,0 +1,163 @@
+.navbar{
+    height: 90px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo{
+    width: 100px;
+    height: 50px;
+}
+
+.logo{
+    background-image: url("");
+    background-size: cover;
+    height: 70px;
+    width: 20%;
+}
+
+.border{
+    border: 1.5px solid transparent;
+}
+
+.border:hover{
+    border: 1.5px solid white;
+}
+/**box2**/
+.add-1{
+    color: #cccccc;
+    font-size: 0.8rem;
+    margin-left: 9px;
+}
+
+.add-2{
+    font-size: 1rem;
+}
+/**box3**/
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+
+.nav-search{
+    display: flex;
+   
+}
+
+.nav-search:hover{
+    border: 2px solid yellow;
+}
+.search-input{
+    width: 250px;
+    height: 30px;
+    border: none;
+}
+
+.search-icon{
+    height: 32px;
+    width: 40px;
+    background-color: aqua;
+     border-bottom-right-radius: 5px;
+     border-top-right-radius: 5px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 1.2rem;
+     border: none;
+     color: black;
+}
+
+span{
+    font-size: 0.8rem;
+    color: #cccccc;
+}
+
+.new-second{
+    font-size: 1rem;
+}
+
+.nav-cart i{
+    font-size: 25px;
+}
+
+.heading{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 20px;
+    padding: 40px 20px;
+    background-color: #f3e6d4;
+}
+
+.Dining{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dining{
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+    padding: 7px;
+}
+
+.cl1 img{
+    height: 300px;
+     width: 100%;
+     background-size: cover;
+     margin-bottom: 2rem;
+     margin-top: 1rem;  
+}
+
+.cl2 img{
+    height: 300px;
+     width: 100%;
+     background-size: cover;
+     margin-bottom: 2rem;
+     margin-top: 1rem;  
+}
+
+.cl3 img{
+    height: 300px;
+     width: 100%;
+     background-size: cover;
+     margin-bottom: 2rem;
+     margin-top: 1rem;  
+}
+
+.heading h1{
+    color: #a67b5b;
+
+}
+.Dining {
+    background-color: #fff9e6;
+}
+
+.dining{
+    background-color: #ffffff;
+    border: 1px solid #eadfc8;
+}
+
+.dining:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.dining h1 {
+    color: #4b3b2f;
+}
+
+.dining p {
+    color: #6d5b4b;
+}
+
+button {
+    background-color: #c49a6c;
+    color: white;
+}

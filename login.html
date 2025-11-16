@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopSphere | Login</title>
+  <style>
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background-color: #f5eedd;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url(login2.png);
+      background-size: cover;
+    }
+
+    .login-container {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      width: 320px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      color: #2e2e2e;
+      font-size: 24px;
+      letter-spacing: 0.5px;
+    }
+
+    .login-container label {
+      display: block;
+      text-align: left;
+      margin-top: 12px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      box-sizing: border-box;
+      outline: none;
+    }
+
+    .login-container input:focus {
+      border-color: #a67b5b;
+      box-shadow: 0 0 5px rgba(166, 123, 91, 0.3);
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: #a67b5b;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+     
+    }
+
+    .login-container button:hover {
+      background-color: #8b6449;
+    }
+
+    .login-container .footer-text {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #666;
+    }
+
+    .login-container .footer-text a {
+      color: #a67b5b;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .login-container .footer-text a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Welcome Back to ShopSphere</h2>
+    <form action="#" method="post">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <button type="submit">Log In</button>
+    </form>
+
+    <p class="footer-text">New to ShopSphere?<a href="#">Create an account</a></p>
+  </div>
+</body>
+</html>

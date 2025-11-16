@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple E‑Commerce Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <span class="brand">MyStore</span>
+      <nav aria-label="Main navigation">
+        <a href="#" role="button">Home</a>
+        <a href="#products" role="button">Products</a>
+        <a href="#contact" role="button">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div>
+        <h1 id="hero-heading">Featured deals</h1>
+        <p class="muted">A small demo e-commerce layout using simple HTML & CSS constructs.</p>
+        <div class="flex">
+          <audio controls>
+            <source src="#" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <small class="muted">Promotional audio</small>
+        </div>
+      </div>
+      <div class="search">
+        <form method="GET" action="/search">
+          <label for="q" class="muted">Search products</label>
+          <input id="q" name="q" type="search" placeholder="Search...">
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <h2>Why shop with us?</h2>
+      <ul>
+        <li>Fast delivery</li>
+        <li>Secure payments</li>
+        <li>24/7 support</li>
+      </ul>
+      <ol>
+        <li>Choose product</li>
+        <li>Place order</li>
+        <li>Receive delivery</li>
+      </ol>
+    </section>
+
+    <section id="products">
+      <h2>Products</h2>
+      <div class="product-grid" id="productGrid">
+        <article class="card" data-id="1" aria-labelledby="p1-title">
+          <img src="https://via.placeholder.com/400x300?text=Product+1" alt="Product 1 image">
+          <h3 id="p1-title">Comfort Chair</h3>
+          <p class="muted">Ergonomic chair for home/office.</p>
+          <div class="flex">
+            <span class="price">₹4,499</span>
+            <button class="btn btn-primary" onclick="addToCart(1)">Add to cart</button>
+            <a href="#" class="btn btn-ghost" onclick="openModal(1);return false;">View</a>
+          </div>
+        </article>
+
+        <article class="card" data-id="2" aria-labelledby="p2-title">
+          <img src="https://via.placeholder.com/400x300?text=Product+2" alt="Product 2 image">
+          <h3 id="p2-title">Wireless Headphones</h3>
+          <p class="muted">Long battery life. Comfortable fit.</p>
+          <div class="flex">
+            <span class="price">₹2,199</span>
+            <button class="btn btn-primary" onclick="addToCart(2)">Add to cart</button>
+            <a href="#" class="btn btn-ghost" onclick="openModal(2);return false;">View</a>
+          </div>
+        </article>
+
+        <article class="card" data-id="3" aria-labelledby="p3-title">
+          <img src="https://via.placeholder.com/400x300?text=Product+3" alt="Product 3 image">
+          <h3 id="p3-title">Smart Lamp</h3>
+          <p class="muted">Dimmable RGB lamp with app control.</p>
+          <div class="flex">
+            <span class="price">₹899</span>
+            <button class="btn btn-primary" onclick="addToCart(3)">Add to cart</button>
+            <a href="#" class="btn btn-ghost" onclick="openModal(3);return false;">View</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="orders-title" style="margin-top:18px;">
+      <h2 id="orders-title">Order summary (example)</h2>
+      <table>
+        <caption style="caption-side: top; font-weight:600;">Recent orders</caption>
+        <thead>
+          <tr><th>Order ID</th><th>Items</th><th>Total</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>#1023</td><td>3</td><td>₹7,599</td><td>Shipped</td></tr>
+          <tr><td>#1022</td><td>1</td><td>₹899</td><td>Delivered</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="3">Note</td><td>Sample data</td></tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="contact" style="margin-top:20px;">
+      <h2>Contact & Checkout form</h2>
+      <form id="checkout" method="POST" action="/checkout">
+        <fieldset>
+          <legend>Shipping details</legend>
+          <label for="name">Full name</label><br>
+          <input id="name" name="name" type="text" required placeholder="Your name"><br><br>
+          <label for="email">Email</label><br>
+          <input id="email" name="email" type="email" placeholder="you@example.com"><br><br>
+          <label for="address">Address</label><br>
+          <textarea id="address" name="address" rows="3"></textarea><br><br>
+          <label for="city">City</label>
+          <input id="city" name="city" type="text">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="IN">India</option>
+            <option value="US">United States</option>
+            <option value="GB">United Kingdom</option>
+          </select>
+        </fieldset>
+        <fieldset style="margin-top:10px;">
+          <legend>Payment</legend>
+          <label><input type="radio" name="pay" value="card" checked> Card</label>
+          <label><input type="radio" name="pay" value="upi"> UPI</label>
+          <label><input type="radio" name="pay" value="cod"> Cash on delivery</label>
+        </fieldset>
+        <button type="submit" class="btn btn-primary">Place order</button>
+      </form>
+    </section>
+
+    <section style="margin-top:18px;">
+      <h2>Product video</h2>
+      <video controls width="480">
+        <source src="#" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+  </main>
+
+  <aside class="floating-cart" id="cartBox" aria-live="polite">
+    <strong>Cart</strong>
+    <div id="cartItems" class="muted">0 items</div>
+    <a href="#" class="btn btn-ghost" onclick="openCart();return false;">View</a>
+  </aside>
+
+  <div class="modal-backdrop" id="modalBackdrop" onclick="closeModal(event)">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <h3 id="modalTitle">Product quick view</h3>
+      <p id="modalContent">Product details will appear here.</p>
+      <div style="text-align:right; margin-top:12px;"><button class="btn" onclick="closeModal();">Close</button></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="year"></span> MyStore — built with basic HTML & CSS. <small class="muted">(This demo is inspired by major e-commerce sites; use it as a learning base.)</small></p>
+  </footer>
+
+  <script>
+    const products = {
+      1: { id:1, title: 'Comfort Chair', price: 4499, desc: 'A comfortable ergonomic chair.' },
+      2: { id:2, title: 'Wireless Headphones', price: 2199, desc: 'Noise cancelling headphones.' },
+      3: { id:3, title: 'Smart Lamp', price: 899, desc: 'Color-changing smart lamp.' }
+    };
+    const cart = {};
+    function addToCart(id){ cart[id] = (cart[id] || 0) + 1; updateCartUI(); alert(products[id].title + ' added to cart'); }
+    function updateCartUI(){ const totalItems = Object.values(cart).reduce((s,n)=>s+n,0); document.getElementById('cartItems').textContent = totalItems + ' item' + (totalItems!==1 ? 's' : ''); }
+    function openModal(id){ const p = products[id]; document.getElementById('modalTitle').textContent = p.title; document.getElementById('modalContent').textContent = p.desc + ' — Price: ₹' + p.price; document.getElementById('modalBackdrop').style.display = 'grid'; }
+    function closeModal(e){ if(e && e.target !== e.currentTarget) return; document.getElementById('modalBackdrop').style.display = 'none'; }
+    function openCart(){ const lines = Object.entries(cart).map(([id,qty]) => products[id].title + ' x' + qty); if(lines.length === 0) alert('Cart is empty'); else alert('Cart:\n' + lines.join('\n')); }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
