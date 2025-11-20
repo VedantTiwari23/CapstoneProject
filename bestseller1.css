@@ -141,9 +141,6 @@ span{
     color: #a67b5b;
 
 }
-.best-seller {
-    background-color: #fff9e6;
-}
 
 .product {
     background-color: #ffffff;
@@ -169,4 +166,12 @@ button:hover {
 
 .home a{
     color: rgba(41, 120, 237, 0.803);
+}
+
+.one{
+    margin-top: 30px;
+}
+
+body{
+    background-color: #fff9e6;
 }

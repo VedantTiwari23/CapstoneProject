@@ -131,6 +131,34 @@ span{
      margin-top: 1rem;  
 }
 
+.cl4 img{
+    height: 300px;
+     width: 100%;
+     background-size: cover;
+     margin-bottom: 2rem;
+     margin-top: 1rem;  
+}
+
+.cl5 img{
+    height: 300px;
+     width: 100%;
+     background-size: cover;
+     margin-bottom: 2rem;
+     margin-top: 1rem;  
+}
+
+.cl6 img{
+    height: 300px;
+     width: 100%;
+     background-size: cover;
+     margin-bottom: 2rem;
+     margin-top: 1rem;  
+}
+
+.sec .sofa {
+    margin-top: 30px;
+}
+
 .heading h1{
     color: #a67b5b;
 

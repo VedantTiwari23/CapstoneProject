@@ -136,7 +136,7 @@ span{
 
 }
 .Dining {
-    background-color: #fff9e6;
+    margin-top: 30px;
 }
 
 .dining{
@@ -160,4 +160,8 @@ span{
 button {
     background-color: #c49a6c;
     color: white;
+}
+
+body{
+    background-color: #fff9e6;
 }
