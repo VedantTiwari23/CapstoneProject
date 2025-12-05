@@ -101,7 +101,7 @@ span{
 }
 
 .sofa{
-    height: 500px;
+    height: 540px;
     width: 400px;
     border: 1px solid black;
     padding: 7px;
@@ -170,10 +170,11 @@ span{
 .sofa {
     background-color: #ffffff;
     border: 1px solid #eadfc8;
+    transition: transform 0.2s ease;
 }
 
 .sofa:hover{
-    transform: translateY(-4px);
+    transform: translateY(-6px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
