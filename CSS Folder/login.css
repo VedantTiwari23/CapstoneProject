@@ -6,7 +6,7 @@ body {
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background-image: url(login2.png);
+      background-image: url(../Image/login2.png);
       background-size: cover;
     }
 
